@@ -8,13 +8,15 @@
 
 .navcont {
     display: flex;
-    
-    border-bottom: 1px solid rgb(188, 185, 185);
+    border-bottom: 1px solid rgb(246, 245, 245);
+    height: 105px;
     
 }
 
 .navbar {
-    width: 70%;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
@@ -25,7 +27,58 @@
 .msect ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+.msect ul li{
+    margin-right: 20px;
+}
+
+.lmain{
     color: #ED7268;
+    border-top: 3px solid #ED7268;
+    padding: 40px;
+    margin-right: 2px;
+    
+}
+
+
+
+.landing, .Blog, .Syst{
+    color: #8D92AA;
+    
+}
+
+.landing:hover{
+    border-top: 3px solid #3d3e42;
+    padding: 40px;
+}
+
+.Blog:hover{
+    border-top: 3px solid #3d3e42;
+    padding: 40px;
+}
+
+.Syst:hover{
+    border-top: 3px solid #3d3e42;
+    padding: 40px;
+}
+
+.rsect{
+    padding: 40px;
+   
+    font-size: 20px;
+    color: #6B626C;
+    border-left:1px solid rgb(205, 200, 200) ;
+    border-right: 1px solid rgb(205, 200, 200);
+}
+
+
+
+.rsect:hover{
+    color: white;
+    background-color: #ED7268 ;
 }
