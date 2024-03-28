@@ -5,27 +5,27 @@
     box-sizing: border-box;
 }
 
+:root{
+    --theme-bg:#ED7268;
+    --theme-fg: #8D92AA;;
+}
+
 
 .navcont {
-    display: flex;
-    border-bottom: 1px solid rgb(246, 245, 245);
-    height: 105px;
     
 }
 
-.navbar {
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 90%;
+.navcont .navbar {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
+    justify-content: space-around;
     align-items: center;
-
 }
 
-.msect ul{
-    list-style-type: none;
+.navcont .navbar .lsect{
+    padding: 1rem;
+}
+.navcont .navbar  .msect{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,12 +33,24 @@
     
 }
 
-.msect ul li{
-    margin-right: 20px;
+.msect .menu{
+    padding: 1.5rem 1rem;
 }
 
+
+.msect .menu a{
+    text-decoration: none;
+    color: var(--theme-fg);
+    font-size: 10pt;
+}
+
+
+.msect .menu:hover{
+    color: black;
+    border-top: 3px solid black;
+}
 .lmain{
-    color: #ED7268;
+    color: var(--theme-fg);
     border-top: 3px solid #ED7268;
     padding: 40px;
     margin-right: 2px;
@@ -81,4 +93,90 @@
 .rsect:hover{
     color: white;
     background-color: #ED7268 ;
+}
+
+
+.active{
+    color: var(--theme-bg);
+}
+
+/* hero image  */
+.fview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+    background-image: url("https://www.borealcm.com/wp-content/uploads/2015/09/slider-1.jpg");
+}
+
+.fview .call-to-action{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fview .call-to-action .title{
+    font-size: 35pt;
+}
+
+.fview .call-to-action p{
+    font-size: 12pt;
+    
+}
+.fview .call-to-action .btn{
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--theme-bg);
+    color: white;
+    font-size: 12pt;
+    font-weight: 900;
+}
+
+.stats{
+    column-gap: 1rem;
+    padding: 0 3rem;
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+    background-color: rgb(74, 82, 120) !important;
+    align-items: center;
+}
+
+
+.stats h1{
+    font-weight: bolder;
+}
+
+.stats p{
+    font-size: 12pt;
+}
+
+
+.stats .statistics {
+    width: 100%;
+}
+
+.stats .statistics .statistics-container{
+    display: flex;
+
+}
+
+.stats .statistics .statistics-container .header{
+    display: flex;
+}
+
+
+.stats .statistics .statistics-container .icon{
+    color: var(--theme-bg);
+    font-size: 25pt;
+    margin: 10px;
 }
