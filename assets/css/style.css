@@ -8,6 +8,7 @@
 :root{
     --theme-bg:#ED7268;
     --theme-fg: #8D92AA;;
+    --theme-font1:#333333;
 }
 
 
@@ -189,4 +190,90 @@
     font-size: 25pt;
     margin: 10px;
     
+}
+
+.features{
+    display: grid;
+    grid-template-areas: 
+    'hline f1 f2 f3' 'hline f4 f5 f6'
+    ;
+    height: 100%;
+    margin-top: 80px;
+    
+    
+}
+
+.features .hline{
+    grid-area: hline;
+    color: var(--theme-font1);
+    font-family: Roboto;
+    padding: 40px;
+    font-size: 18pt;
+}
+
+
+.features .f1, .f2, .f3, .f4, .f5, .f6{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    border: none;
+    width:auto;
+    height: 250px;
+    padding: 40px;
+    box-shadow: 1px 2px 8px 0 rgba(105, 104, 104, 0.2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.features .f1{
+    grid-area: f1;
+}
+
+.features .f2{
+    grid-area: f2;
+    
+}
+
+.features .f3{
+    grid-area: f3;
+   
+}
+
+.features .f4{
+    grid-area: f4;
+}
+
+.features .f5{
+    grid-area: f5;
+}
+
+.features .f6{
+    grid-area: f6;
+
+}
+
+.gem{
+    color: var(--theme-bg);
+    font-size: 25pt;
+}
+
+.header1{
+    color: var(--theme-font1);
+    font-size: 12pt;
+    font-family: Roboto;
+    font-weight: lighter;
+
+}
+
+.context1{
+    color: #85868C;
+    font-family: Roboto;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.module {
+    display: flex;
 }
