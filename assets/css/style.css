@@ -8,7 +8,7 @@
 
 :root{
     --theme-bg:#ED7268;
-    --theme-fg: #8D92AA;;
+    --theme-fg: #8D92AA;
     --theme-font1:#333333;
 }
 
@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid rgb(205, 200, 200);
 }
 
 .navcont .navbar .lsect{
@@ -51,35 +52,7 @@
     color: black;
     border-top: 3px solid black;
 }
-.lmain{
-    color: var(--theme-fg);
-    border-top: 3px solid #ED7268;
-    padding: 40px;
-    margin-right: 2px;
-    
-}
 
-
-
-.landing, .Blog, .Syst{
-    color: #8D92AA;
-    
-}
-
-.landing:hover{
-    border-top: 3px solid #3d3e42;
-    padding: 40px;
-}
-
-.Blog:hover{
-    border-top: 3px solid #3d3e42;
-    padding: 40px;
-}
-
-.Syst:hover{
-    border-top: 3px solid #3d3e42;
-    padding: 40px;
-}
 
 .rsect{
     padding: 40px;
@@ -319,6 +292,11 @@ font-size: 25pt;
 
 }
 
+.offer .action .btn1:hover{
+    background-color: white;
+    color: var(--theme-fg);
+}
+
 .offer .action h1{
     font-size: 25pt;
 }
@@ -330,5 +308,131 @@ font-size: 25pt;
 
 
 .footer{
-    background-image: url("https://demo.giantfocal.com/hubfs/GiantFocal_Marketplace/Atomic/images/atomic-img-02.jpg");
+    background-image: url("	https://demo.giantfocal.com/hubfs/GiantFocal_Marketplace/Atomic/images/atomic-footer-bg.jpg");
+    
+    background-size: cover;
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+}
+
+
+.footer1{
+    display: flex;
+    
+    padding: 6rem 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.footer .footer1 .left{
+    width: 30%;
+}
+
+.footer .footer1 .left .flogo img{
+    width: 50px;
+}
+
+
+.footer .footer1 .left .para {
+    font-size: 11pt;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer .footer1 .left .para p{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.footer .footer1 .left .social {
+    font-size: 12pt;
+    margin-top: 30px;
+    font-weight: 100;
+
+}
+
+.footer .footer1 .left .social a{
+    text-decoration: none;
+    background-color:#43475c;
+    color:white ;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+
+.footer .footer1 .right{
+    margin-left: 22rem;
+    width: 50%;
+}
+
+.footer .footer1 .right .menu{
+
+}
+
+.footer .footer1 .right .menu ul{
+    list-style: none;
+   
+}
+
+.footer .footer1 .right .menu .ul li{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form_cont{
+    display: flex;
+    
+}
+
+.form_cont .book img{
+    padding: 5rem;
+    height: 800px;
+
+}
+
+.form_cont .atmform{
+  
+    padding: 5rem 0;
+}
+
+.form_cont .atmform .hd h1{
+    font-size: 35pt;
+    color: var(--theme-font1);
+}
+
+.form_cont .atmform .text{
+    margin-top: 20px;
+}
+
+.form_cont .atmform .text p{
+    font-size: 12pt;
+    color: var(--theme-fg);
+    line-height: 1.5;
+    text-align: left;
+
+}
+
+.form_cont .atmform .social1{
+    margin-top: 20px;
+}
+
+.form_cont .atmform .social1 a{
+    font-size: 15pt;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--theme-bg);
+    margin-right: 10px;
 }
