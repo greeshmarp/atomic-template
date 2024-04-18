@@ -5,5 +5,5 @@ free frontend template using HTML , CSS
 https://demo.giantfocal.com/atomic/lite/page/home
 
 
-#live preview
+# live preview
 https://greeshmarp.github.io/atomic-template/
